@@ -48,9 +48,9 @@ class Statistics extends Component {
 
     return (
       <>
-        {/* <Title>Please leav feedback</Title> */}
+        <Title>Please leav feedback</Title>
         <Wrapper>
-          <VoteBlock title="Please leav feedback">
+          <VoteBlock title="Leav feedback">
             <VoteVariants options={voteOptions} leaveVote={this.leaveVote} />
           </VoteBlock>
           <VoteBlock title="Statistics:">
