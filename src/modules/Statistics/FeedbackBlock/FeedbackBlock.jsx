@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import { Block, BlockTitle } from './vote-block.styled';
+import { Block, BlockTitle } from './feedback-block.styled';
 
-const VoteBlock = ({ children, title }) => {
+const FeedbackBlock = ({ children, title }) => {
   return (
     <Block>
       <BlockTitle>{title}</BlockTitle>
@@ -11,9 +11,9 @@ const VoteBlock = ({ children, title }) => {
   );
 };
 
-export default VoteBlock;
+export default FeedbackBlock;
 
-VoteBlock.prototypes = {
+FeedbackBlock.prototypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired,
 };

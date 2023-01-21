@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-const VoteName = styled.p`
+const FeedbackName = styled.p`
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 15px;
 `;
 
-export { VoteName };
+export { FeedbackName };
