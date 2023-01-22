@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 const Title = styled.h1`
+  color: #113fbec5;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;

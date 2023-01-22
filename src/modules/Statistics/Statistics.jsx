@@ -34,7 +34,7 @@ class Statistics extends Component {
     const { good } = this.state;
     const total = this.countTotalFeedback();
     const totalGoodFeedback = good;
-    const result = ((totalGoodFeedback / total) * 100).toFixed(2);
+    const result = ((totalGoodFeedback / total) * 100).toFixed();
     return Number(result);
   }
 
@@ -52,7 +52,7 @@ class Statistics extends Component {
         <Wrapper>
           <FeedbackBlock title="Leave feedback">
             <FeedbackVariants
-              options={FeedbackOptions}
+              feedbackOptions={FeedbackOptions}
               leaveFeedback={this.leaveFeedback}
             />
           </FeedbackBlock>

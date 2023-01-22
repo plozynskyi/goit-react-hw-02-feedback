@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 
 const Block = styled.div`
-  border: 1px solid;
+  border: 2px solid #113fbec5;
   border-radius: 10px;
   padding: 15px;
+  color: #113fbec5;
 `;
 
 const BlockTitle = styled.h1`

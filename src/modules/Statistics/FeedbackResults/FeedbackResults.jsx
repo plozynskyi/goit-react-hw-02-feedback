@@ -22,8 +22,9 @@ const FeedbackResults = ({
 export default FeedbackResults;
 
 FeedbackResults.propTypes = {
-  total: PropTypes.number.isRequired,
-  goodPercent: PropTypes.number.isRequired,
-  neutralPercent: PropTypes.number.isRequired,
-  badPercent: PropTypes.number.isRequired,
+  goodFeedback: PropTypes.number.isRequired,
+  neutralFeedback: PropTypes.number.isRequired,
+  badFeedback: PropTypes.number.isRequired,
+  totalFeedback: PropTypes.number.isRequired,
+  goodPercentFeedback: PropTypes.number.isRequired,
 };
