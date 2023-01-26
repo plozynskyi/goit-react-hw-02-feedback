@@ -1,17 +1,18 @@
 import PropTypes from 'prop-types';
 
-import FeedbackResults from './FeedbackResults/FeedbackResults';
 import Notification from '../Notification/Notification';
+
+import { FeedbackName } from './statistics.styled';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return total ? (
-    <FeedbackResults
-      totalFeedback={total}
-      goodFeedback={good}
-      neutralFeedback={neutral}
-      badFeedback={bad}
-      goodPercentFeedback={positivePercentage}
-    />
+    <>
+      <FeedbackName>Good: {good}</FeedbackName>
+      <FeedbackName>Neutral: {neutral}</FeedbackName>
+      <FeedbackName>Bad: {bad}</FeedbackName>
+      <FeedbackName>Total: {total}</FeedbackName>
+      <FeedbackName>Positive feedback: {positivePercentage}%</FeedbackName>
+    </>
   ) : (
     <Notification text={'There is no feedback'} />
   );

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import { Block, BlockTitle } from './feedback-block.styled';
+import { Block, BlockTitle } from './section.styled';
 
-const FeedbackBlock = ({ children, title }) => {
+const Section = ({ children, title }) => {
   return (
     <Block>
       <BlockTitle>{title}</BlockTitle>
@@ -11,9 +11,9 @@ const FeedbackBlock = ({ children, title }) => {
   );
 };
 
-export default FeedbackBlock;
+export default Section;
 
-FeedbackBlock.prototypes = {
+Section.prototypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired,
 };
